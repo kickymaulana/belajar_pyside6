@@ -1,0 +1,6 @@
+# Abaikan folder virtual environment
+belajar_pyside6/
+
+# Abaikan cache Python
+__pycache__/
+*.pyc
