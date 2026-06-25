@@ -3,6 +3,7 @@ from PySide6.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxL
 from PySide6.QtCore import Qt, Slot
 from random import choice
 
+
 class ApikasiKita(QWidget):
     def __init__(self) -> None:
         super().__init__()
@@ -29,7 +30,6 @@ class ApikasiKita(QWidget):
                                        border-radius: 8px;
                                        padding: 10px;
                                        """)
-        
         self.tombol_aksi.clicked.connect(self.saat_tombol_ditekan)
 
         self.layout_utama: QVBoxLayout = QVBoxLayout()
@@ -50,6 +50,7 @@ class ApikasiKita(QWidget):
         ]
         self.label_utama.setText(choice(nama))
         print("label diganti!")
+
 
 if __name__ == "__main__":
     aplikasi: QApplication = QApplication(sys.argv)
