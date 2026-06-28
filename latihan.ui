@@ -50,6 +50,16 @@
      </rect>
     </property>
    </widget>
+   <widget class="QComboBox" name="combo_jabatan">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>130</y>
+      <width>111</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
