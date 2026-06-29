@@ -20,6 +20,7 @@ class AplikasiKita:
         self.muat_data_ke_table()
     def inisialisasi_interface(self) -> None:
         self.table_karyawan: QTableView = self.ui.table_karyawan
+        self.table_karyawan.verticalHeader().setVisible(False)
         self.table_karyawan.clicked.connect(self.saat_tombol_diklik)
     def muat_data_ke_table(self) -> None:
         list_karyawan: list[dict[str, str]] = [
